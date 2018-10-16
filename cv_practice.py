@@ -13,4 +13,3 @@ logreg = LogisticRegression().fit(X_train, y_train)
 
 # evaluate the model on the test set
 print("Test set score: {:.2f}".format(logreg.score(X_test, y_test)))
-
