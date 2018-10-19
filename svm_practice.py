@@ -22,8 +22,11 @@ polynomial_svm_clf = Pipeline([
 
 
 # plt.plot(X[:, 0], X[:, 1], data=y,  fmt='bo')
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.rainbow)
-plt.colorbar(label= "y value")
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.get_cmap("rainbow", 2))
+
+# plt.legend(plt.cm.get_cmap("rainbow", 2))
+plt.legend()
+plt.colorbar(ticks=range(2), label= "y value")
 
 
 plt.show()
